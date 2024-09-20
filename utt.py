@@ -1,6 +1,7 @@
 """
 Module to manage and print ultimate tic-tac-toe boards.
 """
+from copy import deepcopy
 
 bigX = [ "   X    X  ",
          "    X  X   ",
@@ -39,8 +40,11 @@ class XOGrid:
     A standard tic-tac-toe grid
     """
 
-    def __init__(self):
-        self.grid = [[' ' for j in range(3)] for i in range(3)]
+    def __init__(self, other=None):
+        if other is None:
+            self.grid = [[' ' for j in range(3)] for i in range(3)]
+        else:
+            self.grid = deepcopy(other.grid)
 
 
     def winner(self):
@@ -115,13 +119,18 @@ class XOGrid:
 
 
 class UTTBoard:
-    def __init__(self):
+    def __init__(self, other=None):
         """
         Initialize an empty board.
         """
-        self.board = [[XOGrid() for j in range(3)] for i in range(3)]
-        self.outer = XOGrid()
-        self.last_move = None
+        if other is None:
+            self.board = [[XOGrid() for j in range(3)] for i in range(3)]
+            self.outer = XOGrid()
+            self.last_move = None
+        else:
+            self.board = deepcopy(other.board)
+            self.outer = deepcopy(other.outer)
+            self.last_move = other.last_move
     
     def __str__(self):
         out = []
