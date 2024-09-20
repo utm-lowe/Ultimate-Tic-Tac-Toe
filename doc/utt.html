@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module utt</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">utt</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/pngwen/Library/CloudStorage/OneDrive-UniversityofTennessee/Classes/CSCI%20380/Assignments/Ultimate-Tic-Tac-Toe/utt.py">/Users/pngwen/Library/CloudStorage/OneDrive-UniversityofTennessee/Classes/CSCI 380/Assignments/Ultimate-Tic-Tac-Toe/utt.py</a></td></tr></table>
+    <p><span class="code">Module&nbsp;to&nbsp;manage&nbsp;and&nbsp;print&nbsp;ultimate&nbsp;tic-tac-toe&nbsp;boards.</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="utt.html#UTTBoard">UTTBoard</a>
+</dt><dt class="heading-text"><a href="utt.html#XOGrid">XOGrid</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="UTTBoard">class <strong>UTTBoard</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="UTTBoard-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;an&nbsp;empty&nbsp;board.</span></dd></dl>
+
+<dl><dt><a name="UTTBoard-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Return&nbsp;str(self).</span></dd></dl>
+
+<dl><dt><a name="UTTBoard-move"><strong>move</strong></a>(self, m, player)</dt><dd><span class="code">Attempt&nbsp;to&nbsp;make&nbsp;the&nbsp;move.&nbsp;Returns&nbsp;true&nbsp;on&nbsp;success,&nbsp;false&nbsp;on&nbsp;failure.</span></dd></dl>
+
+<dl><dt><a name="UTTBoard-moves"><strong>moves</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="UTTBoard-winner"><strong>winner</strong></a>(self)</dt><dd><span class="code">Return&nbsp;the&nbsp;winner&nbsp;of&nbsp;the&nbsp;over&nbsp;all&nbsp;game.<br>
+X,&nbsp;O,&nbsp;S,&nbsp;N</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="XOGrid">class <strong>XOGrid</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;standard&nbsp;tic-tac-toe&nbsp;grid<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="XOGrid-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="XOGrid-move"><strong>move</strong></a>(self, m, player)</dt><dd><span class="code">Attempt&nbsp;to&nbsp;take&nbsp;move&nbsp;m&nbsp;for&nbsp;player.<br>
+Return&nbsp;true&nbsp;on&nbsp;success,&nbsp;false&nbsp;on&nbsp;failure.</span></dd></dl>
+
+<dl><dt><a name="XOGrid-moves"><strong>moves</strong></a>(self)</dt><dd><span class="code">Return&nbsp;a&nbsp;list&nbsp;of&nbsp;legal&nbsp;moves.</span></dd></dl>
+
+<dl><dt><a name="XOGrid-winner"><strong>winner</strong></a>(self)</dt><dd><span class="code">Returns&nbsp;the&nbsp;winner&nbsp;of&nbsp;a&nbsp;grid.&nbsp;This&nbsp;is&nbsp;one&nbsp;of:<br>
+X<br>
+O<br>
+S&nbsp;-&nbsp;Scratch&nbsp;/&nbsp;Tie<br>
+N&nbsp;-&nbsp;None</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-get_agent"><strong>get_agent</strong></a>(agents, player)</dt></dl>
+ <dl><dt><a name="-gridxy"><strong>gridxy</strong></a>(num)</dt><dd><span class="code">Convert&nbsp;a&nbsp;grid&nbsp;number&nbsp;into&nbsp;an&nbsp;x&nbsp;y&nbsp;coordinate<br>
+&nbsp;1&nbsp;|&nbsp;2&nbsp;|&nbsp;3<br>
+---+---+---<br>
+&nbsp;4&nbsp;|&nbsp;5&nbsp;|&nbsp;6<br>
+---+---+---<br>
+&nbsp;7&nbsp;|&nbsp;8&nbsp;|&nbsp;9<br>
+Returns&nbsp;x,y</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>(argv)</dt><dd><span class="code">Let's&nbsp;play&nbsp;some&nbsp;ultimate&nbsp;Tic-Tac-Toe!</span></dd></dl>
+ <dl><dt><a name="-mnum"><strong>mnum</strong></a>(x, y)</dt><dd><span class="code">Convert&nbsp;x&nbsp;y&nbsp;into&nbsp;a&nbsp;move&nbsp;number.&nbsp;Returns&nbsp;the&nbsp;move&nbsp;number</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>bigO</strong> = ['  OOOOOO   ', ' O      O  ', ' O      O  ', ' O      O  ', '  OOOOOO   ']<br>
+<strong>bigX</strong> = ['   X    X  ', '    X  X   ', '     XX    ', '    X  X   ', '   X    X  ']</td></tr></table>
+</body></html>
