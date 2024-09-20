@@ -215,6 +215,8 @@ class UTTBoard:
         Return the winner of the over all game.
         X, O, S, N
         """
+        if not self.moves():
+            return "S"
         return self.outer.winner()
 
 def get_agent(agents, player):
@@ -251,6 +253,7 @@ def main(argv):
     board = UTTBoard()
     to_play = 'X'
     while board.winner() not in ('X', 'O', 'S'):
+        print("\n")
         print(board)
         if to_play == 'X':
             if board.move(xplayer(board, to_play), to_play):
@@ -258,6 +261,7 @@ def main(argv):
         else:
             if board.move(oplayer(board, to_play), to_play):
                 to_play = 'X'
+    print("\n")
     print(board)
     w = board.winner()
     if w == 'S':
