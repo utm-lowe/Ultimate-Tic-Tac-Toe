@@ -180,6 +180,8 @@ class UTTBoard:
         result = []
         for board in boards:
             x,y = gridxy(board)
+            if self.outer.grid[y][x] != ' ':
+                continue
             for m in self.board[y][x].moves():
                 result.append(board*10 + m)
         
